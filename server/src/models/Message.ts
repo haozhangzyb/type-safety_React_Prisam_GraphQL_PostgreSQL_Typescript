@@ -7,5 +7,8 @@ builder.prismaObject("Message", {
     createdAt: t.expose("createdAt", {
       type: "Date",
     }),
+    updatedAt: t.expose("updatedAt", {
+      type: "Date",
+    }),
   }),
 });

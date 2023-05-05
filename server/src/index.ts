@@ -1,19 +1,7 @@
 import { createServer } from "node:http";
 import { createYoga } from "graphql-yoga";
-import { createSchema } from "graphql-yoga";
 
-const schema = createSchema({
-  typeDefs: /* GraphQL */ `
-    type Query {
-      hello: String
-    }
-  `,
-  resolvers: {
-    Query: {
-      hello: () => "world",
-    },
-  },
-});
+import { schema } from "./schema";
 
 // Create a Yoga instance with a GraphQL schema.
 const yoga = createYoga({ schema });
