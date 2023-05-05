@@ -5,10 +5,10 @@ builder.prismaObject("Message", {
     id: t.exposeID("id"),
     body: t.exposeString("body"),
     createdAt: t.expose("createdAt", {
-      type: "Date",
+      type: "Timestamp",
     }),
     updatedAt: t.expose("updatedAt", {
-      type: "Date",
+      type: "Timestamp",
     }),
   }),
 });
