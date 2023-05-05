@@ -1,6 +1,6 @@
 This project is created to demo how to ensure type safety in a full stack app from backend to frontend and vice versa.
 
-## Used techs:
+## Used techs
 
 - [Prisma](https://www.prisma.io/) as the Object-Relational Mapper (ORM)
 - [PostgreSQL](https://www.postgresql.org/) as the database
@@ -12,3 +12,17 @@ This project is created to demo how to ensure type safety in a full stack app fr
 - [React](https://react.dev/) as the frontend JavaScript library
 - [GraphQL Codegen](https://the-guild.dev/graphql/codegen) to generate types for the frontend based on the GraphQL schema
 - [TailwindCSS](https://tailwindcss.com/) for styling the application
+
+## Setup
+
+### 1.Environment Variables
+
+In `.env` , add your `DATABASE_URL`.
+
+### 2. Install dependencies
+
+Within both the client and server folders, run `npm i`.
+
+### 3. Start the app
+
+Within both the client and server folders, run `npm run dev`.
