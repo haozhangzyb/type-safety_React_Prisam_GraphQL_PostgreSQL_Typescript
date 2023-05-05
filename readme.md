@@ -8,9 +8,10 @@ This project is created to demo how to ensure type safety in a full stack app fr
 - [TypeScript](https://www.typescriptlang.org/) as the programming language
 - [GraphQL Yoga](https://github.com/dotansimha/graphql-yoga) as the GraphQL server
 - [Pothos GraphQL](https://pothos-graphql.dev/) as the code-first GraphQL schema builder
+- [GraphQL Codegen](https://the-guild.dev/graphql/codegen) to generate types for the frontend based on the GraphQL schema
+- [GraphQL Scalars](https://the-guild.dev/graphql/scalars) for custom scalar types.
 - [Vite](https://vitejs.dev/) to manage frontend project environment
 - [React](https://react.dev/) as the frontend JavaScript library
-- [GraphQL Codegen](https://the-guild.dev/graphql/codegen) to generate types for the frontend based on the GraphQL schema
 - [TailwindCSS](https://tailwindcss.com/) for styling the application
 
 ## Setup
