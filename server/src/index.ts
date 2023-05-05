@@ -1,1 +1,29 @@
-console.log("hello world");
+import { createServer } from "node:http";
+import { createYoga } from "graphql-yoga";
+import { createSchema } from "graphql-yoga";
+
+const schema = createSchema({
+  typeDefs: /* GraphQL */ `
+    type Query {
+      hello: String
+    }
+  `,
+  resolvers: {
+    Query: {
+      hello: () => "world",
+    },
+  },
+});
+
+// Create a Yoga instance with a GraphQL schema.
+const yoga = createYoga({ schema });
+
+// Pass it into a server to hook into request handlers.
+const server = createServer(yoga);
+
+const port = Number(process.env.API_PORT) || 4000;
+
+// Start the server and you're done!
+server.listen(port, () => {
+  console.info(`Server is running on http://localhost:${port}/graphql`);
+});
