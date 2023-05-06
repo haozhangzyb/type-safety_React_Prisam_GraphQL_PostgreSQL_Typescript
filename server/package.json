@@ -28,6 +28,7 @@
     "@pothos/plugin-prisma": "^3.50.0",
     "@prisma/client": "^4.13.0",
     "graphql": "^16.6.0",
-    "graphql-scalars": "^1.21.3"
+    "graphql-scalars": "^1.21.3",
+    "urql": "^4.0.2"
   }
 }
